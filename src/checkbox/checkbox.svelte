@@ -3,8 +3,9 @@
 </script>
 
 <div
-  class="rounded border group bg-slate-200 p-4 outline-offset-2 outline-sky-400 focus-within:bg-sky-200"
+  class="group rounded border bg-slate-200 p-4 outline-offset-2 outline-sky-400 
+  has-checked:border-green-500 has-checked:bg-green-300"
 >
-  <input class="peer accent-purple-300" {id} {...props} type="checkbox" />
-  <label class="peer-checked:line-through group-hover:font-bold" for={id}>{label}</label>
+  <input type="checkbox" class="peer accent-green-700" {id} {...props}  />
+  <label class="group-hover:font-bold peer-checked:line-through peer-checked:text-white" for={id}>{label}</label>
 </div>
