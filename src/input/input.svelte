@@ -4,8 +4,8 @@
   const errorId = error ? `${id}-error` : undefined;
 </script>
 
-<div class="space-y-1">
-  <label class="block font-medium text-slate-900" for={id}>{label}</label>
+<div class="space-y-1 group">
+  <label class="block font-medium text-slate-900 group-has-[input:required]:after:content-['_*'] after:text-red-600" for={id}>{label}</label>
   <input
     class="block outline outline-slate-800 rounded px-2 py-1 focus:outline-2 focus:outline-blue-500 placeholder:italic placeholder-gray-400"
     {id}
